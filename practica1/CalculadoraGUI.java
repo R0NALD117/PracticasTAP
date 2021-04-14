@@ -47,6 +47,7 @@ public class CalculadoraGUI extends JFrame implements ActionListener {
         }
         for(int i = 0; i < arr_col.length; i++){
             arr_col[i] = new JButton("C"+ (i + 1 ));
+            arr_col[i].addActionListener(this);
         }
         op = new JButton("Op");
         btn_mas = new JButton("+");
@@ -55,6 +56,14 @@ public class CalculadoraGUI extends JFrame implements ActionListener {
         btn_mul = new JButton("*");
         btn_ig = new JButton("=");
         btn_exp = new JButton("^");
+
+        op.addActionListener(this);
+        btn_mas.addActionListener(this);
+        btn_menos.addActionListener(this);
+        btn_div.addActionListener(this);
+        btn_mul.addActionListener(this);
+        btn_ig.addActionListener(this);
+        btn_exp.addActionListener(this);
 
         panel_inferior.setLayout(new GridLayout(5,4,8,8));
 
@@ -83,8 +92,54 @@ public class CalculadoraGUI extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-       
+
+       if(e.getSource() == arr_btn[0]){
+            campo_texto.setText(campo_texto.getText()+"0");
+       } 
+       if(e.getSource() == arr_btn[1]){
+            campo_texto.setText(campo_texto.getText()+"1");
+       }
+       if(e.getSource() == arr_btn[2]){
+            campo_texto.setText(campo_texto.getText()+"2");
+       }
+       if(e.getSource() == arr_btn[3]){
+            campo_texto.setText(campo_texto.getText()+"3");
+       }
+       if(e.getSource() == arr_btn[4]){
+            campo_texto.setText(campo_texto.getText()+"4");
+       }
+       if(e.getSource() == arr_btn[5]){
+            campo_texto.setText(campo_texto.getText()+"5");
+       }
+       if(e.getSource() == arr_btn[6]){
+            campo_texto.setText(campo_texto.getText()+"6");
+       }
+       if(e.getSource() == arr_btn[7]){
+            campo_texto.setText(campo_texto.getText()+"7");
+       }
+       if(e.getSource() == arr_btn[8]){
+            campo_texto.setText(campo_texto.getText()+"8");
+       }
+       if(e.getSource() == arr_btn[9]){
+            campo_texto.setText(campo_texto.getText()+"9");
+       }
+       if(e.getSource() == btn_mas){
+        campo_texto.setText(campo_texto.getText()+ "+");
+       }
+       if(e.getSource() == btn_menos){
+          campo_texto.setText(campo_texto.getText()+ "-");
+       }
+       if(e.getSource() == btn_div){
+          campo_texto.setText(campo_texto.getText()+ "/");
+       }
+       if(e.getSource() == btn_mul){
+          campo_texto.setText(campo_texto.getText()+ "*");
+       }  
+       if(e.getSource() == btn_exp){
+          campo_texto.setText(campo_texto.getText()+ "^");
+       }
+       if(e.getSource() == btn_ig){
+          campo_texto.setText(campo_texto.getText()+ "=");
+       }
     }
-
-
 }
