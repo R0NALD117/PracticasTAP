@@ -1,4 +1,4 @@
-package practica1;
+package PracticasTAP.practica1;
 
 import javax.swing.*;
 import java.awt.*;
