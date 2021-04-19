@@ -4,11 +4,12 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class GameMain extends Frame implements MouseListener, MouseMotionListener, KeyListener{
-	
+
 	/**
-	 * 
+	 *
 	 */
-	private static final long serialVersionUID = -6242959679180212526L;
+	private static final long serialVersionUID = 1L;
+
 	private Game obj_pintable;
 	
 	public GameMain() {
@@ -48,14 +49,14 @@ public class GameMain extends Frame implements MouseListener, MouseMotionListene
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// TODO Esbozo de método generado automáticamente
+		// TODO Esbozo de mï¿½todo generado automï¿½ticamente
 		
 	}
 
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO Esbozo de método generado automáticamente
+		// TODO Esbozo de mï¿½todo generado automï¿½ticamente
 		
 	}
 
@@ -74,7 +75,7 @@ public class GameMain extends Frame implements MouseListener, MouseMotionListene
 
 	@Override
 	public void mouseMoved(MouseEvent e) {
-		// TODO Esbozo de método generado automáticamente
+		// TODO Esbozo de mï¿½todo generado automï¿½ticamente
 		
 	}
 
@@ -96,28 +97,28 @@ public class GameMain extends Frame implements MouseListener, MouseMotionListene
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		// TODO Esbozo de método generado automáticamente
+		// TODO Esbozo de mï¿½todo generado automï¿½ticamente
 		
 	}
 
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Esbozo de método generado automáticamente
+		// TODO Esbozo de mï¿½todo generado automï¿½ticamente
 		
 	}
 
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		// TODO Esbozo de método generado automáticamente
+		// TODO Esbozo de mï¿½todo generado automï¿½ticamente
 		
 	}
 
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-		// TODO Esbozo de método generado automáticamente
+		// TODO Esbozo de mï¿½todo generado automï¿½ticamente
 		
 	}
 
