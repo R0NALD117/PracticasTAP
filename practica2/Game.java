@@ -4,6 +4,11 @@ import java.awt.*;
 
 public class Game extends Canvas {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2778745579044540261L;
+	
 	private int x, y, w, h;
     private boolean isClicked;
     

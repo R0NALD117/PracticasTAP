@@ -5,6 +5,10 @@ import java.awt.event.*;
 
 public class GameMain extends Frame implements MouseListener, MouseMotionListener, KeyListener{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6242959679180212526L;
 	private Game obj_pintable;
 	
 	public GameMain() {
