@@ -1,6 +1,8 @@
 package practica3.informacionweb;
 
-import java.net.InetAddress;
+import java.io.*;
+
+import java.net.*;
 
 public class IP {
 
@@ -8,10 +10,9 @@ public class IP {
 		
 		try {
 		
-			String host = "https://www.itescam.edu.mx/";
+			String host = "itescam.edu.mx";
 			
-			String numIp = "8.8.8.8";
-			
+			/*
 			System.out.printf("La dirección de %s es %s \n", host, InetAddress.getByName(host).getHostAddress());
 			
 			System.out.println();
@@ -19,10 +20,22 @@ public class IP {
 			System.out.printf("El nombre del host para la IP %s es %s\n", numIp, InetAddress.getByName(numIp).getHostName());
 			
 			System.out.println();
+			*/
 			
+			String ip = "La dirección IP de " + host + " es: " + InetAddress.getByName(host).getHostAddress();
 			
+			File Ip = new File("IP.txt");
+			
+			BufferedWriter br = new BufferedWriter(new FileWriter(Ip));
+			
+			br.write(ip);
+			br.close();
+			
+			System.out.println("Archivo creado");
 		}
 		catch(Exception e) {
+			
+			e.printStackTrace();
 			
 		}
 		
